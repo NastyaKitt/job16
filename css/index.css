@@ -1,0 +1,369 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat Alternates", sans-serif;
+}
+button, .ok {
+    cursor: pointer;
+}
+/* body */
+body {
+    background-color: #FFBA26;
+}
+/* main */
+main {
+    display: grid;
+    justify-items: center;
+}
+/* Header */
+header {
+    padding: 0 4rem;
+    height: 7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    background-color: #FFBA26;
+    border-bottom: 1px solid #000;
+    & span {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        & img {
+            border-radius: 2rem;
+            border: 1px solid #000;
+        }
+        & h2 {
+            padding-left: 1rem;
+        }
+    }
+    & button {
+        width: 20rem;
+        height: 3rem;
+        border: 1px solid #000;
+        background-color: #32BEA6;
+        font-size: 1.25rem;
+        color: #fff;
+        &:hover {
+            box-shadow: 0px 0px 25px 1px #32BEA6 ;
+            transition: all 1s;
+        }
+        &:active {
+            box-shadow: 0px 0px 25px 1px #333 inset;
+            transition: all 1s;
+        }
+    }
+}
+/* heroSection */
+.heroSection {
+    height: 100vh;
+    width: 100%;
+    background-image: url(img/main.jpg);
+    padding: 5rem 10rem 5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 1px solid #000;
+    justify-content: space-between;
+    color: #fff;
+    & span {
+        width: 100%;
+        background-color: #00000070;
+        padding: 1rem;
+        & h1 {
+            text-align: center;
+            font-size: 3rem;
+            margin-bottom: 2rem;
+        }
+        & span {
+            & .tochka {
+                display: flex;
+                align-items: center;
+                padding-bottom: 1rem;
+                & .krug {
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    background-color: #fff;
+                    margin-right: 2rem;
+                }
+                & p {
+                    font-size: 2rem;
+                }
+            } 
+        }
+    }
+    & a {
+        width: 50%;
+        text-decoration: none;
+        & button {
+            width: 100%;
+            height: 5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            border: 1px solid #000;
+            background-color: #32BEA6;
+            &:hover {
+                box-shadow: 0px 0px 25px 1px #32BEA6 ;
+                transition: all 1s;
+            }
+            &:active {
+                box-shadow: 0px 0px 25px 1px #333 inset;
+                transition: all 1s;
+            }
+    
+            & p {
+                font-size: 1.25rem;
+                color: #fff;
+            }
+        }
+    }
+}
+/* Отступы */
+.broke,.price,.form,.reviews,.me {
+    width: calc(100% - 20rem);
+    background-color: #fff;
+    padding: 5rem;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+}
+/* line */
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    margin: 1rem 0 2rem;
+}
+/* broke */
+.broke {
+    & h1 {
+        font-size: 2rem;
+    }
+    & span {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        & .tocka {
+            width: 35%;
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            & .krug {
+                height: 1.5rem ;
+                width: 1.5rem ;
+                margin-right: 2rem;
+                background-color: #32BEA6;
+                border-radius: 50%;
+            }
+            & p {
+                width: 80%;
+                text-align: left;
+            }
+        }
+    }
+}
+/* price */
+.price {
+    & h1 {
+        font-size: 2rem;
+    }
+    & span {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        & .tocka {
+            width: 35%;
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            & .krug {
+                height: 1.5rem ;
+                width: 1.5rem ;
+                margin-right: 2rem;
+                background-color: #32BEA6;
+                border-radius: 50%;
+            }
+            & p {
+                width: 80%;
+                text-align: left;
+            }
+        }
+    }
+
+}
+/* form */
+.form {
+    display: flex;
+    height: 30rem;
+    justify-content: space-between;
+    border: 1px solid #000;
+    background-image: url(img/table\ 1.jpg);
+    color: #fff;
+    & span {
+        width: 59%;
+        & h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #32BEA6 ;
+            background-color: #333;
+            padding: 1rem;
+        }
+        & h3 {
+            padding-left: 2rem;
+            padding-bottom: 1rem;
+        }
+    }
+    & form {
+        width: 40%;
+        background-color: #fff;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        border-radius: 1rem;
+        & input {
+            height: 20%;
+            border-radius: 1rem;
+            color: #000;
+            border: 1px solid #000;
+            padding-left: 1rem;
+            &.ok {
+                background-color: #32BEA6;
+                padding: 0;
+                color:  #fff;
+                font-size: 1.25rem;
+                &:hover {
+                    box-shadow: 0px 0px 25px 1px #32BEA6 ;
+                    transition: all 1s;
+                }
+                &:active {
+                    box-shadow: 0px 0px 25px 1px #333 inset;
+                    transition: all 1s;
+                }
+        
+            }
+        }
+    }
+}
+/* reviews */
+.reviews {
+    & .review {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        & .item {
+            width: 45%;
+            & h2 {
+                font-size: 1.5rem;
+            }
+            & h3 {
+                margin: 3rem 0;
+                padding-left: 3rem;
+                font-size: 1.25rem;
+            }
+            & p {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+/* me */
+.me {
+    display: grid;
+    justify-items: center;
+    & img {
+        width: 15rem;
+        height: 15rem;
+        border-radius: 50%;
+        margin-bottom: 2rem;
+        border: 1px solid #000;
+    }
+    & p {
+        padding-bottom: 1rem;
+        max-width: 100%;
+        width: 50%;
+    }
+}
+/* footer */
+footer {
+    width: 100%;
+    background-color: #fff;
+    border-top: 1px solid #000;
+    padding: 4rem 10rem;
+    & p {
+        margin: 0.5rem 0;
+    }
+    & button {
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid #000;
+        font-size: 1rem;
+        &:hover {
+            color: #32bea79a;
+            transition: all 1s;
+        }
+        &:active {
+            color: #32BEA6;
+            transition: all 0.1s;
+        }
+
+    }
+}
+/* popup */
+.popup {
+    width: 100vw;
+    height: 100vh;
+    background-color: #0000009a;
+    position: fixed;
+    display: grid;
+    visibility: none;
+    opacity: 0;
+    transform: scale(0.1);
+    justify-items: center;
+    align-items: center;
+    &.show {
+        visibility: visible;
+        opacity: 1;
+        transform: scale(1);
+        transition: visibility 2s, opacity 2s, transform 1s ;
+    }
+    & button {
+        width: 4rem;
+        height: 4rem;
+        position: absolute;
+        right: 2rem;
+        top: 2rem;
+        background-color: #32BEA6;
+        border: 1px solid #000;
+        border-radius: 50%;
+        &:hover {
+            background-color: #fff;
+            transition: all 1s;
+            & path {
+                stroke: #32BEA6;
+                transition: all 1s;
+
+            }
+        }
+        &:active {
+            transform: rotate(90deg);
+            transition: all 0.5s;
+        }
+    }
+    & .politica {
+        width: 70%;
+        height: 90%;
+        padding: 1rem;
+        overflow-y: scroll;
+        background-color: #fff;
+        & h1 {
+            padding-bottom: 2rem;
+        }
+    }
+}
